@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>History Deleter Options</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/normalize.min.css" />
+    <link rel="stylesheet" href="assets/options.css" />
+    <link rel="stylesheet" href="assets/regexpal.css" />
+</head>
+<body>
+    <div class="container">
+        <div id="new">
+            <label for="new_input">New RegEx Pattern</label>
+            <div class="regex-input">
+                <textarea id="new_input" placeholder="^https?://example.com/.*"></textarea>
+                <pre id="new_highlight" class="regex"></pre>
+            </div>
+            <div class="buttons-row">
+                <button type="button" class="btn primary" id="new_save">Save</button>
+            </div>
+        </div>
+
+        <div id="edit" class="hidden">
+            <label for="edit_input">Edit RegEx Pattern</label>
+            <div class="regex-input">
+                <textarea id="edit_input" placeholder="^https?://example.com/.*"></textarea>
+                <pre id="edit_highlight" class="regex"></pre>
+            </div>
+            <div class="buttons-row">
+                <button type="button" class="btn primary" id="edit_save" data-id="">Save</button>
+                <button type="button" class="btn" id="edit_cancel">Cancel</button>
+            </div>
+        </div>
+
+        <div id="patterns"></div>
+
+        <script src="options.js" type="module"></script>
+    </div>
+</body>
+</html>

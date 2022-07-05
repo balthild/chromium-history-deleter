@@ -1,0 +1,21 @@
+{
+    "name": "History Deleter",
+    "description": "Delete history automatically",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "icons": {
+        "512": "icon-512.png"
+    },
+    "background": {
+        "type": "module",
+        "service_worker": "background.js"
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+    "permissions": [
+        "history",
+        "storage"
+    ]
+}
